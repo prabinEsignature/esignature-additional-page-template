@@ -9030,6 +9030,7 @@ nav[role="navigation"] > div {
   display: grid;
   grid-template-columns: auto 500px;
   gap: 80px;
+  border-bottom: 1px solid rgba(236, 241, 252, 1);
 }
 .e-services-text-block{
   background: linear-gradient(to left, #FFFFFF 0%, #ECF1FC 100%);
@@ -9047,6 +9048,7 @@ nav[role="navigation"] > div {
   border-radius: 32px;
   top: -18px;
   left: -18px;
+  z-index: -1;
 }
 .e-services-block .service-list li{
   color: #000000!important;
@@ -9064,4 +9066,13 @@ nav[role="navigation"] > div {
 .e-services-block .e-button:hover{
   opacity: 0.9;
   color: #fff!important;
+}
+.e-services-fragment .e-services-block:nth-child(even){
+  grid-template-columns: 500px auto;
+}
+.e-services-fragment .e-services-block:nth-child(even) .e-services-text-block{
+  order: 2;
+}
+.e-services-fragments .book{
+  background: url("../images/service/book.webp")!important;
 }
