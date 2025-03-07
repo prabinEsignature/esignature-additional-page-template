@@ -162,6 +162,9 @@ body.open {
 .text-davy-gray {
   color: var(--davy-gray) !important;
 }
+.text-dim-gray{
+  color: var(--dim-gray)!important;
+}
 .text-primary {
   color: var(--byzantine-blue) !important;
 }
@@ -1383,7 +1386,8 @@ h3,
 .btn-blue,
 .testimonial .btn,
 .c-header-btn .e-button,
-.collapseButton .e-button {
+.collapseButton .e-button,
+.e-button-group .e-button {
   box-shadow: 0 12px 25px var(--black-20);
   color: var(--white-default);
   border-radius: 30px;
@@ -1401,6 +1405,15 @@ h3,
 .btn-blue,
 .c-header-btn .e-button {
   background-color: var(--byzantine-blue);
+}
+.btn-mantis{
+  background: #53BB61;
+}
+.btn-white{
+  background: #fff;
+}
+.btn-white *{
+  color: #000;
 }
 .header .e-header-text__content .header-button .e-button:hover,
 .header-description__left--button .e-button:hover,
@@ -4411,10 +4424,12 @@ ul.pagination .disabled span {
 .toc-list-link.h2 {
   position: relative;
   opacity: 0.9;
+  font-size: 16px!important;
 }
 .toc-list-link.h3 {
   font-weight: 400 !important;
   font-size: 14px !important;
+  font-size: 16px!important;
 }
 .toc-list-link.h2::after {
   position: absolute;
@@ -9270,6 +9285,28 @@ nav[role="navigation"] > div {
   margin-top: 48px;
 }
 
+/* products single page */
+.products-single-header-text h1.h1 {
+  max-width: 800px;
+}
+.products-single-header-content{
+  gap: 60px;
+}
+.e-products-stats-content{
+  gap: 40px;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 20px 30px -10px #D7D7D7;
+  max-width: 1200px;
+  transform: translateY(-50%);
+}
+.products-stats-list{
+  gap: 64px;
+}
+.products-stats-item{
+  row-gap: 8px;
+}
+
 @media(min-width: 576px){
   .e-services-text-block .h2{
     font-size: 28px!important;
@@ -9539,11 +9576,11 @@ nav[role="navigation"] > div {
   .product-trust-company img{
     max-height: 32px!important;
   }
-  .products-fragment-body .e-button-group{
+  .e-button-group{
     gap: 12px;
     flex-wrap: wrap;
   }
-  .products-fragment-body .e-button-group .e-button{
+  .e-button-group .e-button{
     flex: 1;
   }
   .products-fragment-info {
@@ -9581,11 +9618,12 @@ nav[role="navigation"] > div {
     margin: 12px 0 0 12px;
   }
   .e-services-text-block::after{
-    top: -12px;
-    left: -12px;
+    top: -6px;
+    left: -6px;
   }
   .e-services-text-block{
     padding: 20px;
+    margin: 0;
   }
   .products-fragment-info{
     flex-direction: column;
