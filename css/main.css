@@ -9306,6 +9306,75 @@ nav[role="navigation"] > div {
 .products-stats-item{
   row-gap: 8px;
 }
+.products-about-grid{
+  display: grid;
+  grid-template-columns: 55% auto;
+  align-items: center;
+  gap: 52px;
+}
+.products-about-text {
+  padding: 32px 0;
+}
+
+.products-about-text2{
+  border: 1px solid #E8E8E8;
+  padding: 28px;
+  border-radius: 28px;
+}
+.e-products-about{
+  padding-bottom: 80px;
+}
+.products-join-content .custom-body-stylings{
+  max-width: 844px;
+  margin: 24px 0;
+}
+
+.e-products-feat-segment{
+  background: url("../images/products/feature_wave_bg.png") center/cover no-repeat;
+  padding: 40px 0;
+  margin: 40px 0;
+  min-height: 100vh;
+}
+
+.products-feat-segment-item{
+  padding: 20px!important;
+  border-radius: 12px;
+  max-width: 360px;
+}
+
+.products-feat-segment-item .features-item-icon{
+  margin-bottom: 12px;
+  width: 36px;
+  height: 36px;
+}
+.products-feat-segment-mid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 40px;
+}
+.products-feat-segment-group{
+  display: grid;
+  gap: 24px;
+}
+.products-feat-segment-list{
+  display: grid;
+  align-items: start;
+  gap: 24px;
+}
+
+.e-products-infosegment .infosegment-title{
+  margin-bottom: 28px;
+}
+
+.products-infosegment-grid{
+  display: grid;
+  grid-template-columns: 58% auto;
+  align-items: center;
+  gap: 40px;
+  border-top: 1px solid #E8E8E8;
+  padding: 80px 0;
+}
 
 @media(min-width: 576px){
   .e-services-text-block .h2{
